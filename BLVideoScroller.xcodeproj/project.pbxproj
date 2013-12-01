@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06488A6F184BB204008BF49D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06488A6E184BB204008BF49D /* Foundation.framework */; };
+		06488A71184BB204008BF49D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06488A70184BB204008BF49D /* CoreGraphics.framework */; };
+		06488A73184BB204008BF49D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06488A72184BB204008BF49D /* UIKit.framework */; };
+		06488A79184BB204008BF49D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06488A77184BB204008BF49D /* InfoPlist.strings */; };
+		06488A7B184BB204008BF49D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06488A7A184BB204008BF49D /* main.m */; };
+		06488A7F184BB204008BF49D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06488A7E184BB204008BF49D /* AppDelegate.m */; };
+		06488A82184BB204008BF49D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06488A80184BB204008BF49D /* Main_iPhone.storyboard */; };
+		06488A85184BB204008BF49D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06488A83184BB204008BF49D /* Main_iPad.storyboard */; };
+		06488A88184BB204008BF49D /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06488A87184BB204008BF49D /* SampleViewController.m */; };
+		06488A8A184BB204008BF49D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06488A89184BB204008BF49D /* Images.xcassets */; };
+		06488A91184BB204008BF49D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06488A90184BB204008BF49D /* XCTest.framework */; };
+		06488A92184BB204008BF49D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06488A6E184BB204008BF49D /* Foundation.framework */; };
+		06488A93184BB204008BF49D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06488A72184BB204008BF49D /* UIKit.framework */; };
+		06488A9B184BB204008BF49D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06488A99184BB204008BF49D /* InfoPlist.strings */; };
+		06488A9D184BB204008BF49D /* BLVideoScrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06488A9C184BB204008BF49D /* BLVideoScrollerTests.m */; };
+		06CBCE5D184BB7690050FFE1 /* BLVideoScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CBCE5C184BB7690050FFE1 /* BLVideoScroller.m */; };
+		06CBCE60184BB79F0050FFE1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CBCE5F184BB79F0050FFE1 /* AVFoundation.framework */; };
+		06CBCE62184BB7BC0050FFE1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CBCE61184BB7BC0050FFE1 /* MediaPlayer.framework */; };
+		06CBCE67184BBB5A0050FFE1 /* sample.mov in Resources */ = {isa = PBXBuildFile; fileRef = 06CBCE66184BBB5A0050FFE1 /* sample.mov */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06488A94184BB204008BF49D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06488A63184BB204008BF49D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06488A6A184BB204008BF49D;
+			remoteInfo = BLVideoScroller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06488A6B184BB204008BF49D /* BLVideoScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLVideoScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06488A6E184BB204008BF49D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06488A70184BB204008BF49D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06488A72184BB204008BF49D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06488A76184BB204008BF49D /* BLVideoScroller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLVideoScroller-Info.plist"; sourceTree = "<group>"; };
+		06488A78184BB204008BF49D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06488A7A184BB204008BF49D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06488A7C184BB204008BF49D /* BLVideoScroller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLVideoScroller-Prefix.pch"; sourceTree = "<group>"; };
+		06488A7D184BB204008BF49D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		06488A7E184BB204008BF49D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06488A81184BB204008BF49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		06488A84184BB204008BF49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		06488A86184BB204008BF49D /* SampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		06488A87184BB204008BF49D /* SampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		06488A89184BB204008BF49D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06488A8F184BB204008BF49D /* BLVideoScrollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLVideoScrollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06488A90184BB204008BF49D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		06488A98184BB204008BF49D /* BLVideoScrollerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLVideoScrollerTests-Info.plist"; sourceTree = "<group>"; };
+		06488A9A184BB204008BF49D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06488A9C184BB204008BF49D /* BLVideoScrollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLVideoScrollerTests.m; sourceTree = "<group>"; };
+		06CBCE5B184BB7690050FFE1 /* BLVideoScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLVideoScroller.h; path = Source/BLVideoScroller.h; sourceTree = "<group>"; };
+		06CBCE5C184BB7690050FFE1 /* BLVideoScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLVideoScroller.m; path = Source/BLVideoScroller.m; sourceTree = "<group>"; };
+		06CBCE5F184BB79F0050FFE1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		06CBCE61184BB7BC0050FFE1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		06CBCE66184BBB5A0050FFE1 /* sample.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample.mov; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06488A68184BB204008BF49D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CBCE62184BB7BC0050FFE1 /* MediaPlayer.framework in Frameworks */,
+				06CBCE60184BB79F0050FFE1 /* AVFoundation.framework in Frameworks */,
+				06488A71184BB204008BF49D /* CoreGraphics.framework in Frameworks */,
+				06488A73184BB204008BF49D /* UIKit.framework in Frameworks */,
+				06488A6F184BB204008BF49D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06488A8C184BB204008BF49D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06488A91184BB204008BF49D /* XCTest.framework in Frameworks */,
+				06488A93184BB204008BF49D /* UIKit.framework in Frameworks */,
+				06488A92184BB204008BF49D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06488A62184BB204008BF49D = {
+			isa = PBXGroup;
+			children = (
+				06488A74184BB204008BF49D /* BLVideoScroller */,
+				06488A96184BB204008BF49D /* BLVideoScrollerTests */,
+				06488A6D184BB204008BF49D /* Frameworks */,
+				06488A6C184BB204008BF49D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06488A6C184BB204008BF49D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06488A6B184BB204008BF49D /* BLVideoScroller.app */,
+				06488A8F184BB204008BF49D /* BLVideoScrollerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06488A6D184BB204008BF49D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06CBCE61184BB7BC0050FFE1 /* MediaPlayer.framework */,
+				06CBCE5F184BB79F0050FFE1 /* AVFoundation.framework */,
+				06488A6E184BB204008BF49D /* Foundation.framework */,
+				06488A70184BB204008BF49D /* CoreGraphics.framework */,
+				06488A72184BB204008BF49D /* UIKit.framework */,
+				06488A90184BB204008BF49D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06488A74184BB204008BF49D /* BLVideoScroller */ = {
+			isa = PBXGroup;
+			children = (
+				06CBCE5E184BB7780050FFE1 /* Source */,
+				06CBCE63184BB8C10050FFE1 /* Interface */,
+				06488A86184BB204008BF49D /* SampleViewController.h */,
+				06488A87184BB204008BF49D /* SampleViewController.m */,
+				06CBCE66184BBB5A0050FFE1 /* sample.mov */,
+				06488A89184BB204008BF49D /* Images.xcassets */,
+				06488A75184BB204008BF49D /* Supporting Files */,
+			);
+			path = BLVideoScroller;
+			sourceTree = "<group>";
+		};
+		06488A75184BB204008BF49D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06488A7D184BB204008BF49D /* AppDelegate.h */,
+				06488A7E184BB204008BF49D /* AppDelegate.m */,
+				06488A76184BB204008BF49D /* BLVideoScroller-Info.plist */,
+				06488A77184BB204008BF49D /* InfoPlist.strings */,
+				06488A7A184BB204008BF49D /* main.m */,
+				06488A7C184BB204008BF49D /* BLVideoScroller-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06488A96184BB204008BF49D /* BLVideoScrollerTests */ = {
+			isa = PBXGroup;
+			children = (
+				06488A9C184BB204008BF49D /* BLVideoScrollerTests.m */,
+				06488A97184BB204008BF49D /* Supporting Files */,
+			);
+			path = BLVideoScrollerTests;
+			sourceTree = "<group>";
+		};
+		06488A97184BB204008BF49D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06488A98184BB204008BF49D /* BLVideoScrollerTests-Info.plist */,
+				06488A99184BB204008BF49D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06CBCE5E184BB7780050FFE1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				06CBCE5B184BB7690050FFE1 /* BLVideoScroller.h */,
+				06CBCE5C184BB7690050FFE1 /* BLVideoScroller.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		06CBCE63184BB8C10050FFE1 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				06488A80184BB204008BF49D /* Main_iPhone.storyboard */,
+				06488A83184BB204008BF49D /* Main_iPad.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06488A6A184BB204008BF49D /* BLVideoScroller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06488AA0184BB204008BF49D /* Build configuration list for PBXNativeTarget "BLVideoScroller" */;
+			buildPhases = (
+				06488A67184BB204008BF49D /* Sources */,
+				06488A68184BB204008BF49D /* Frameworks */,
+				06488A69184BB204008BF49D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLVideoScroller;
+			productName = BLVideoScroller;
+			productReference = 06488A6B184BB204008BF49D /* BLVideoScroller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06488A8E184BB204008BF49D /* BLVideoScrollerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06488AA3184BB204008BF49D /* Build configuration list for PBXNativeTarget "BLVideoScrollerTests" */;
+			buildPhases = (
+				06488A8B184BB204008BF49D /* Sources */,
+				06488A8C184BB204008BF49D /* Frameworks */,
+				06488A8D184BB204008BF49D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06488A95184BB204008BF49D /* PBXTargetDependency */,
+			);
+			name = BLVideoScrollerTests;
+			productName = BLVideoScrollerTests;
+			productReference = 06488A8F184BB204008BF49D /* BLVideoScrollerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06488A63184BB204008BF49D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = iBlacksus;
+				TargetAttributes = {
+					06488A8E184BB204008BF49D = {
+						TestTargetID = 06488A6A184BB204008BF49D;
+					};
+				};
+			};
+			buildConfigurationList = 06488A66184BB204008BF49D /* Build configuration list for PBXProject "BLVideoScroller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06488A62184BB204008BF49D;
+			productRefGroup = 06488A6C184BB204008BF49D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06488A6A184BB204008BF49D /* BLVideoScroller */,
+				06488A8E184BB204008BF49D /* BLVideoScrollerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06488A69184BB204008BF49D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06488A85184BB204008BF49D /* Main_iPad.storyboard in Resources */,
+				06488A8A184BB204008BF49D /* Images.xcassets in Resources */,
+				06488A82184BB204008BF49D /* Main_iPhone.storyboard in Resources */,
+				06488A79184BB204008BF49D /* InfoPlist.strings in Resources */,
+				06CBCE67184BBB5A0050FFE1 /* sample.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06488A8D184BB204008BF49D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06488A9B184BB204008BF49D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06488A67184BB204008BF49D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06488A88184BB204008BF49D /* SampleViewController.m in Sources */,
+				06488A7F184BB204008BF49D /* AppDelegate.m in Sources */,
+				06488A7B184BB204008BF49D /* main.m in Sources */,
+				06CBCE5D184BB7690050FFE1 /* BLVideoScroller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06488A8B184BB204008BF49D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06488A9D184BB204008BF49D /* BLVideoScrollerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06488A95184BB204008BF49D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06488A6A184BB204008BF49D /* BLVideoScroller */;
+			targetProxy = 06488A94184BB204008BF49D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06488A77184BB204008BF49D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06488A78184BB204008BF49D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06488A80184BB204008BF49D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06488A81184BB204008BF49D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		06488A83184BB204008BF49D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06488A84184BB204008BF49D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		06488A99184BB204008BF49D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06488A9A184BB204008BF49D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06488A9E184BB204008BF49D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					./BLVideoScroller/Source,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06488A9F184BB204008BF49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					./BLVideoScroller/Source,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06488AA1184BB204008BF49D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLVideoScroller/BLVideoScroller-Prefix.pch";
+				INFOPLIST_FILE = "BLVideoScroller/BLVideoScroller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06488AA2184BB204008BF49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLVideoScroller/BLVideoScroller-Prefix.pch";
+				INFOPLIST_FILE = "BLVideoScroller/BLVideoScroller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		06488AA4184BB204008BF49D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLVideoScroller.app/BLVideoScroller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLVideoScroller/BLVideoScroller-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BLVideoScrollerTests/BLVideoScrollerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		06488AA5184BB204008BF49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLVideoScroller.app/BLVideoScroller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLVideoScroller/BLVideoScroller-Prefix.pch";
+				INFOPLIST_FILE = "BLVideoScrollerTests/BLVideoScrollerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06488A66184BB204008BF49D /* Build configuration list for PBXProject "BLVideoScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06488A9E184BB204008BF49D /* Debug */,
+				06488A9F184BB204008BF49D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06488AA0184BB204008BF49D /* Build configuration list for PBXNativeTarget "BLVideoScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06488AA1184BB204008BF49D /* Debug */,
+				06488AA2184BB204008BF49D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06488AA3184BB204008BF49D /* Build configuration list for PBXNativeTarget "BLVideoScrollerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06488AA4184BB204008BF49D /* Debug */,
+				06488AA5184BB204008BF49D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06488A63184BB204008BF49D /* Project object */;
+}
